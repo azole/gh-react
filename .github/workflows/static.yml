@@ -42,7 +42,7 @@ jobs:
         run: npm ci
       - name: Deploy
         run: |
-          git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/azole/gh-pages-react.git
+          git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/azole/gh-react.git
           git config --global user.name "GitHub Actions"
           git config --global user.email "asheylai58@gmail.com"
           npm run deploy
